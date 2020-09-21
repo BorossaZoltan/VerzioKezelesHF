@@ -19,7 +19,8 @@ namespace VerzioKezelesHF
                 Console.Write("{0}. szám: ", i + 1);
                 bekertSzamok[i] = int.Parse(Console.ReadLine());
             }
-            Console.Write("A bekért számok átlaga: " + bekertSzamok.Average());
+            Console.WriteLine("A bekért számok átlaga: " + bekertSzamok.Average());
+            Console.Write("Legnagyobb érték: "+bekertSzamok.Max()+"\n Minimum érték: "+ bekertSzamok.Min());
             Console.ReadKey();
         }
     }
