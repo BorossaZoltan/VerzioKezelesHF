@@ -10,8 +10,10 @@ namespace VerzioKezelesHF
     {
         static void Main(string[] args)
         {
-            int[] bekertSzamok = new int[10];
-            Console.WriteLine("Adjon meg 10 számot!");
+            int hanySzamLegyen;
+            Console.Write("Adja meg hány számot szeretne megadni!");
+            hanySzamLegyen = int.Parse(Console.ReadLine());
+            int[] bekertSzamok = new int[hanySzamLegyen];
             for (int i = 0; i < bekertSzamok.Length; i++)
             {
                 Console.Write("{0}. szám: ", i + 1);
